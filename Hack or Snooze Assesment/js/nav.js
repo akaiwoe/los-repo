@@ -37,20 +37,10 @@ function updateNavOnLogin() {
 
 /** Show story creation page on click of submit */
 function navCreateStory(evt) {
-  console.debug("navCreateStory", evt)
+  console.debug("navCreateStory", evt);
   hidePageComponents();
+  $allStoriesList.show(); 
   $storyForm.show();
 }
 
-let test = document.querySelector("#story-form")
-test.addEventListener("onclick", function(){
-  if(test.style.display === "none") {
-    test.style.display = "block";
-  } else {
-    test.style.display = "none";
-  }
-});
-
-$("#story-form").click(function(){
-  alert("CLICKED?")
-})
+$navSubmit.on("click", navCreateStory);
