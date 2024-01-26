@@ -36,6 +36,10 @@
 <nav>
   <div class="navbar-brand">
     <a class="nav-link" href="#" id="nav-all">Hack or Snooze</a>
+  </div> 
+    | 
+  <div class="navbar-story-links" style="display: block;">
+    <a href="#" class="nav-link" id="nav-submit">submit</a>
   </div>
   <div class="nav-right">
     <a class="nav-link" href="#" id="nav-login">login/signup</a>
@@ -96,6 +100,29 @@
   </form>
 </section>
 
+  <!-- Story submission form-->
+  <section id="story-form container">
+  <form 
+    action="#" 
+    id="story-form" 
+    class="story-form hidden" 
+    method="post">
+      <h4>Submit a story</h4>
+    <div class="story-input">
+        <label for="author-name">author</label>
+        <input id="author-name">
+    </div>
+      <div class="story-input">
+      <label for="title-name">title</label>
+      <input id="title-name">
+    </div>
+    <div class="story-input">
+      <label for="url-name">url</label>
+      <input id="url-name">
+    </div>
+    <button type="submit">submit story</button>
+  </form>
+</section>
 <!-- Library JS & our JS -->
 <script src="https://unpkg.com/jquery"></script>
 <script src="https://unpkg.com/axios/dist/axios.js"></script>
