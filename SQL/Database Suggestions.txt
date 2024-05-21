@@ -1,0 +1,17 @@
+For outer_space Database
+
+- Moons for all planets can be switched to a Boolean and a seperate table can better suit listing which moons are paired to which planets.
+- Planets and Orbits around can be made a seperate table
+- Galaxy can be made the main table of which everything stems from considering there is only one Galaxy listed.
+
+For air_traffic Database
+
+- The Database can be organized from two main tables, Airlines and Flyers.
+- From there we can create another table that stores ids for countries so that departing country and landing country can be based on ID instead inputting text. 
+- The same for countries can be done for departing and landing cities.
+- Departure/Arrival time can be stored soley in the airlines table
+- Flyer and Seat data can be stored within the Flyers table.
+
+For music Database
+
+- Since each song has its own ID there can be a seperate producers table that lists all producers and has the ID of a song linked as the foreign key if they contributed in the production.
