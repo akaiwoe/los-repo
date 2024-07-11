@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> Our Available Pets!</h1>
+
+<div class="row">
+    {% for pet in pets %}
+    <div class="column">
+        <a href="/pet/{{pet.id}}"><img src="{{pet.photo_url}}" alt="pet" style="width:100%" class="img{{pet.id}}"></a>
+        <div class="p{{pet.id}}">
+            <div class="text">{{pet.name}} is Available</div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
