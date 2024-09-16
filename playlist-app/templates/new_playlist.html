@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Add a form that when submitted creates a new playlist!</h1>
+
+<form method="POST" action="/playlists/add">
+    <div>
+        {{ form.hidden_tag() }}
+        {{ form.name.label }}
+        {{ form.name(class_="form__field")}}
+    </div>
+    <div>
+        {{ form.description.label }}
+        {{ form.description }}
+    </div>
+    <div>
+        <button class="btn btn-primary" type="submit">Add Playlist</button>
+    </div>
+</form>
+
+{% endblock %}
